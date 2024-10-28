@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
@@ -8,7 +7,6 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  ssr: false,  
   modules: [
     '@pinia/nuxt',
   ],
@@ -17,8 +15,8 @@ export default defineNuxtConfig({
       cssCodeSplit: false,
     },
   },
-
   app: {
-    baseURL: '/jun0h.itch.io/', // Remplacez `nom-du-repo` par le nom de votre dépôt GitHub
-  },
+    baseURL: '/iamdanychock.github.io/', // baseURL: '/<repository>/'
+    buildAssetsDir: 'assets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
+  }
 })
