@@ -7,9 +7,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: [
-    '@pinia/nuxt',
-  ],
+  modules: ['@pinia/nuxt', 'nuxt-gtag'],
   vite: {
     build: {
       cssCodeSplit: false,
@@ -18,5 +16,9 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/iamdanychock.github.io/', // baseURL: '/<repository>/'
     buildAssetsDir: 'assets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
-  }
+  },
+  gtag: {
+    id: 'G-260P7Z499D'
+  },
+  
 })

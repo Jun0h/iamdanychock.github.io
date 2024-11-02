@@ -7,11 +7,13 @@
     <img class="w-auto h-5 rounded-none text-xs" alt="Godot" src="https://img.shields.io/badge/Made%20with-Godot-478CBF?style=flat&logo=godot%20engine&logoColor=white" />
     <img class="w-auto h-5 rounded-none text-xs" alt="GLSL" src="https://img.shields.io/badge/-GLSL-8c5aee" />
     <img class="w-auto h-5 rounded-none text-xs" alt="Photoshop" src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?logo=Adobe%20Photoshop&logoColor=black" />
-
     <img class="w-auto h-5 rounded-none text-xs" alt="C#" src="https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white" />
+    <img class="w-auto h-5 rounded-none text-xs" alt="level Design" src="https://img.shields.io/badge/-Level Design-ff0303" />
+    <img class="w-auto h-5 rounded-none text-xs" alt="level Design" src="https://img.shields.io/badge/-Game Design-ee05fa" />
+
 </h4>
     
-        <h4 class="text-gray-600 font-medium text-xs">Done in 2 weeks, April 2023</h4>
+        <h4 class="text-gray-600 font-medium text-xs">Done in 3 weeks, April 2024</h4>
         <div class="flex flex-wrap mt-5 gap-2 items-center">
             <iframe width="auto" height="auto" src="https://www.youtube.com/embed/DPQw9lYmJ6k?si=gcvOX3Wt4mZm3jTD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
     
@@ -47,9 +49,18 @@
             </p>
 
 
-            <a class="btn btn-primary" href="https://medium.com/@Jun0h/windows-node-on-godot-a-new-gameplay-perspective-d1565ca68504">Read it</a>
+            <div style="text-align: center;">
+  <a 
+    href="https://medium.com/@Jun0h/windows-node-on-godot-a-new-gameplay-perspective-d1565ca68504" 
+    style="display: inline-block; font-size: 2rem; text-decoration: underline; padding: 1rem 2rem; background-color: black; color: white; text-align: center; border-radius: 0.5rem;"
+  >
+    Read it here ! 
+  </a>
+</div>
+<p>
 
-    
+            <iframe frameborder="0" src="https://itch.io/embed/2654166?dark=true" width="552" height="167"><a href="https://jun0h.itch.io/an-eye-for-an-eye">An Eye For An Eye by Dany</a></iframe>
+</p>
         </div>
     
     

@@ -7,6 +7,11 @@
     <img class="w-auto h-5 rounded-none text-xs" alt="Godot" src="https://img.shields.io/badge/Made%20with-Godot-478CBF?style=flat&logo=godot%20engine&logoColor=white" />
     <img class="w-auto h-5 rounded-none text-xs" alt="GLSL" src="https://img.shields.io/badge/-GLSL-8c5aee" />
     <img class="w-auto h-5 rounded-none text-xs" alt="C#" src="https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white" />
+    <img class="w-auto h-5 rounded-none text-xs" alt="level Design" src="https://img.shields.io/badge/-Level Design-ff0303" />
+    <img class="w-auto h-5 rounded-none text-xs" alt="level Design" src="https://img.shields.io/badge/-Game Design-ee05fa" />
+    <img class="w-auto h-5 rounded-none text-xs" alt="Photoshop" src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?logo=Adobe%20Photoshop&logoColor=black" />
+
+
 </h4>
     
         <h4 class="text-gray-600 font-medium text-xs">Done in 2 weeks, April 2023</h4>

@@ -91,6 +91,12 @@ onMounted(() => {
 </script>
 
 <template>
+
+
+<div>
+    
+  </div>
+
   <div id="app">
     <div class="screen" id="screen" @click="deinitWindows">
       <div 
@@ -129,6 +135,9 @@ onMounted(() => {
     ></StartMenu>
     <navbar style="position: absolute; bottom: 0; z-index: 9999" id="navbar" />
   </div>
+
+
+  
 </template>
 
 <style>

@@ -54,7 +54,7 @@
         <img class="w-auto h-5 rounded-none text-xs" alt="Vue" src="https://img.shields.io/badge/-UI-61b083" />
         <img class="w-auto h-5 rounded-none text-xs" alt="Flask" src="https://img.shields.io/badge/-UX-406893" />
         <img class="w-auto h-5 rounded-none text-xs" alt="MongoDB" src="https://img.shields.io/badge/-Game Design-4ca158" />
-        <img class="w-auto h-5 rounded-none text-xs" alt="SQLite" src="https://img.shields.io/badge/-Level Design-64a2c9" />
+        <img class="w-auto h-5 rounded-none text-xs" alt="level Design" src="https://img.shields.io/badge/-Level Design-64a2c9" />
         </h4>
     </div>
     <div class="pt-7">

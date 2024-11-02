@@ -6,6 +6,8 @@
     <h4 class="text-gray-600 font-medium text-xs" style="padding-bottom: 10px; display: flex; gap: 5px;">
     <img class="w-auto h-5 rounded-none text-xs" alt="Godot" src="https://img.shields.io/badge/Made%20with-Godot-478CBF?style=flat&logo=godot%20engine&logoColor=white" />
     <img class="w-auto h-5 rounded-none text-xs" alt="GD Script" src="https://img.shields.io/badge/-GD Script-478CBF" />
+    <img class="w-auto h-5 rounded-none text-xs" alt="level Design" src="https://img.shields.io/badge/-Level Design-45c35" />
+
 </h4>
 
     <h4 class="text-gray-600 font-medium text-xs">Done in March 2022</h4>

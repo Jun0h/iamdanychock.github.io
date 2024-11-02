@@ -6,10 +6,12 @@
     <h4 class="text-gray-600 font-medium text-xs" style="padding-bottom: 10px; display: flex; gap: 5px;">
     <img class="w-auto h-5 rounded-none text-xs" alt="Godot" src="https://img.shields.io/badge/Made%20with-Unity-000000.svg?style=flat&logo=unity" />
     <img class="w-auto h-5 rounded-none text-xs" alt="C#" src="https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white" />
-
+    <img class="w-auto h-5 rounded-none text-xs" alt="level Design" src="https://img.shields.io/badge/-Level Design-ff0303" />
+    <img class="w-auto h-5 rounded-none text-xs" alt="level Design" src="https://img.shields.io/badge/-Game Design-ee05fa" />
+    <img class="w-auto h-5 rounded-none text-xs" alt="FMOD" src="https://img.shields.io/badge/-FMOD-000000?style=flat&logo=fmod&logoColor=white" />
 </h4>
     
-        <h4 class="text-gray-600 font-medium text-xs">Done in 2 weeks, April 2023</h4>
+        <h4 class="text-gray-600 font-medium text-xs">Done from January to March 2024</h4>
         <div class="flex flex-wrap mt-5 gap-2 items-center">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/6OFxrVU8Mj4?si=l3sHKRUuGBkIjhKT&amp;start=24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
         </div>
