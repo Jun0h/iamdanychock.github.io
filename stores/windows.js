@@ -36,6 +36,33 @@ export const useWindowsStore = defineStore("windows", {
         ShowInGodotGrid : false,
         ShowInUnityGrid : false,
         showInNavbar: true,
+        ShowInResearchGrid: false,
+
+      },
+      {
+        windowId: "ResearchContainer", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "Research Projects", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "ResearchContainer", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "45vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "research.ico", // Window Icon Image
+        altText: "Research", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: true,
+        ShowInGodotGrid : false,
+        ShowInUnityGrid : false,
+        showInNavbar: true,
+        ShowInResearchGrid: false,
+
       },
       {
         windowId: "GodotContainer", // Unique ID
@@ -59,6 +86,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInGodotGrid : false,
         ShowInUnityGrid : false,
         showInNavbar: true,
+        ShowInResearchGrid: false,
+
       },
       {
         windowId: "UnityContainer", // Unique ID
@@ -82,6 +111,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInGodotGrid : false,
         ShowInUnityGrid : false,
         showInNavbar: true,
+        ShowInResearchGrid: false,
+
       },
       {
         windowId: "ResumeWindow", // Unique ID
@@ -105,6 +136,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInGodotGrid : false,
         ShowInUnityGrid : false,
         showInNavbar: true,
+        ShowInResearchGrid: false,
+
       },
       {
         windowId: "MailWindow",
@@ -128,6 +161,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInGodotGrid : false,
         ShowInUnityGrid : false,
         showInNavbar: true,
+        ShowInResearchGrid: false,
+
       },
       {
         windowId: "StrayWindow", // Unique ID
@@ -151,6 +186,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInGodotGrid : true,
         ShowInUnityGrid : false,
         showInNavbar: true,
+        ShowInResearchGrid: false,
+
       },
       {
         windowId: "SkyhawkSquadron", // Unique ID
@@ -174,6 +211,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInGodotGrid : true,
         ShowInUnityGrid : false,
         showInNavbar: true,
+        ShowInResearchGrid: false,
+
       },
       {
         windowId: "dual", // Unique ID
@@ -197,6 +236,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInGodotGrid : true,
         ShowInUnityGrid : false,
         showInNavbar: true,
+        ShowInResearchGrid: false,
+
       },
       {
         windowId: "Rewind", // Unique ID
@@ -220,6 +261,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInGodotGrid : true,
         ShowInUnityGrid : false,
         showInNavbar: true,
+        ShowInResearchGrid: false,
+
       },
 
       {
@@ -244,6 +287,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInGodotGrid : true,
         ShowInUnityGrid : false,
         showInNavbar: true,
+        ShowInResearchGrid: true,
+
       },
 
       {
@@ -268,6 +313,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInGodotGrid : false,
         ShowInUnityGrid : true,
         showInNavbar: true,
+        ShowInResearchGrid: false,
+
       },
       {
         windowId: "Vampy", // Unique ID
@@ -291,6 +338,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInGodotGrid : false,
         ShowInUnityGrid : true,
         showInNavbar: true,
+        ShowInResearchGrid: false,
+
       },
       {
         windowId: "Paper", // Unique ID
@@ -314,6 +363,32 @@ export const useWindowsStore = defineStore("windows", {
         ShowInGodotGrid : false,
         ShowInUnityGrid : true,
         showInNavbar: true,
+        ShowInResearchGrid: false,
+      },
+
+      {
+        windowId: "ShaderProject", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "Shader Exploration Project", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "ShaderProject", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "45vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "folder.png", // Window Icon Image
+        altText: "Paper", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: false,
+        ShowInGodotGrid : false,
+        ShowInUnityGrid : true,
+        showInNavbar: true,
+        ShowInResearchGrid: true,
       },
 
 

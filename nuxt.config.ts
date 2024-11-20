@@ -1,5 +1,11 @@
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: {
+    enabled: true,
+
+    timeline: {
+      enabled: true,
+    },
+  },
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
@@ -18,7 +24,7 @@ export default defineNuxtConfig({
     buildAssetsDir: 'assets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
   },
   gtag: {
-    id: 'G-260P7Z499D'
+    id: 'G-DQFM4HPQW5', // Remplace par ton ID de suivi GA4
   },
   
 })

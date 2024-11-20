@@ -16,7 +16,10 @@ import Dual from './views/Projects/Dual.vue'
 import Eye from './views/Projects/Eye.vue'
 import UnityContainer from './views/UnityContainer.vue'
 import Rush from './views/Projects/Rush.vue'
+import ResearchContainer from './views/ResearchContainer.vue'
+import ShaderProject from './views/Projects/ShaderProj.vue'
 
+import { useGtag } from '#imports'
 
 
 import ImagePreviewWindow from './templates/ImagePreviewWindow.vue'
@@ -29,6 +32,7 @@ import Vampy from './views/Projects/Vampy.vue'
 import Paper from './views/Projects/Paper.vue'
 const windowsStore = useWindowsStore()
 const windows = windowsStore.windows
+const { gtag, initialize } = useGtag()
 
 const windowComponents = [
   { name: 'window', comp: Window },
@@ -50,7 +54,9 @@ const slotViews = [
   {name : 'UnityContainer', comp : UnityContainer},
   {name : 'Rush', comp : Rush},
   {name : 'Vampy', comp : Vampy},
-  {name : 'Paper', comp : Paper}
+  {name : 'Paper', comp : Paper},
+  {name : 'ResearchContainer', comp : ResearchContainer},
+  {name : 'ShaderProject', comp :  ShaderProject}
 ]
 
 const windowCheck = (windowId) => {
@@ -86,8 +92,21 @@ onMounted(() => {
     document.documentElement.style.setProperty("--vh", `${vh}px`);
   });
   openWindow('BiographyWindow')
+  allConsentGranted()
+  initialize('G-DQFM4HPQW5')
 })
 
+
+
+function allConsentGranted() {
+  const { gtag } = useGtag()
+  gtag('consent', 'update', {
+    ad_user_data: 'granted',
+    ad_personalization: 'granted',
+    ad_storage: 'granted',
+    analytics_storage: 'granted'
+  })
+}
 </script>
 
 <template>

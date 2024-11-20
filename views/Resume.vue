@@ -8,14 +8,14 @@ const windowsStore = useWindowsStore()
 <template>
 <div style="display: flex; height: 100%; flex-direction: column">
     <nav class="download-bar">
-        <a href="/files/CV_Danilo_OSORIO_Revised.pdf" class="download" style="z-index: 10" download target="_blank">
+        <a href="https://drive.usercontent.google.com/u/0/uc?id=1-T24xYOpSiPmmMKG1miYXl4oRchfPmBo&export=download" class="download" style="z-index: 10" download target="_blank">
             <span style="display: flex" class="border">
                 <img src="@/assets/Resume/download.png" class="icon-image" />
                 <p style="margin-top: 2px">Download</p>
             </span>
         </a>
 
-        <a href="/files/CV_Danilo_OSORIO_Revised.pdf" class="download" style="z-index: 10" target="_blank">
+        <a href="https://drive.google.com/file/d/1-T24xYOpSiPmmMKG1miYXl4oRchfPmBo/view" class="download" style="z-index: 10" target="_blank">
             <span style="display: flex" class="border">
                 <img src="@/assets/Resume/open.png" class="icon-image" />
                 <p style="margin-top: 2px">Open In New Tab</p>
