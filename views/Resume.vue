@@ -26,6 +26,8 @@ const windowsStore = useWindowsStore()
         <iframe class="frame" src="https://drive.google.com/file/d/1-T24xYOpSiPmmMKG1miYXl4oRchfPmBo/preview"></iframe>
         <span v-if="windowsStore.activeWindow != 'ResumeWindow'" style="bottom: 0; left: 0; width: 100%; height: 95%; position: absolute" class="overlay"></span>
     </div>
+
+    
 </div>
 </template>
 

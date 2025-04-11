@@ -12,6 +12,12 @@ const openWindow = (windowId) => {
         windowId: windowId
     }
     windowsStore.setWindowState(payload)
+
+    gtag('event', 'open_window', {
+    event_category: 'Window',
+    event_label: windowId,
+    value: windowId
+  })
 }
   
 const getImagePath = (iconImage) => {

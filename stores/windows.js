@@ -37,6 +37,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnityGrid : false,
         showInNavbar: true,
         ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
 
       },
       {
@@ -62,6 +64,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnityGrid : false,
         showInNavbar: true,
         ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
 
       },
       {
@@ -87,6 +91,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnityGrid : false,
         showInNavbar: true,
         ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
 
       },
       {
@@ -112,6 +118,35 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnityGrid : false,
         showInNavbar: true,
         ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
+
+      },
+      {
+        windowId: "UnrealContainer", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "Unreal Projects", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "UnrealContainer", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "45vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "UnrealLogo.png", // Window Icon Image
+        altText: "Unreal", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: true,
+        ShowInGodotGrid : false,
+        ShowInUnityGrid : false,
+        showInNavbar: true,
+        ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
 
       },
       {
@@ -137,6 +172,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnityGrid : false,
         showInNavbar: true,
         ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
 
       },
       {
@@ -162,6 +199,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnityGrid : false,
         showInNavbar: true,
         ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
 
       },
       {
@@ -187,6 +226,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnityGrid : false,
         showInNavbar: true,
         ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
 
       },
       {
@@ -212,6 +253,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnityGrid : false,
         showInNavbar: true,
         ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
 
       },
       {
@@ -237,6 +280,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnityGrid : false,
         showInNavbar: true,
         ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
 
       },
       {
@@ -262,6 +307,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnityGrid : false,
         showInNavbar: true,
         ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
 
       },
 
@@ -288,6 +335,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnityGrid : false,
         showInNavbar: true,
         ShowInResearchGrid: true,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
 
       },
 
@@ -314,6 +363,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnityGrid : true,
         showInNavbar: true,
         ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
 
       },
       {
@@ -339,6 +390,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnityGrid : true,
         showInNavbar: true,
         ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
 
       },
       {
@@ -364,6 +417,8 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnityGrid : true,
         showInNavbar: true,
         ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
       },
 
       {
@@ -389,9 +444,89 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnityGrid : true,
         showInNavbar: true,
         ShowInResearchGrid: true,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
+      },
+      {
+        windowId: "WorkContainer", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "Work Experience", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "WorkContainer", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "45vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "briefcase.png", // Window Icon Image
+        altText: "Unreal", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: true,
+        ShowInGodotGrid : false,
+        ShowInUnityGrid : false,
+        showInNavbar: true,
+        ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
+
+      },
+      {
+        windowId: "STD", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "BAA-tle for the forest", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "STD", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "45vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "folder.png", // Window Icon Image
+        altText: "STD", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: false,
+        ShowInGodotGrid : false,
+        ShowInUnityGrid : true,
+        showInNavbar: true,
+        ShowInResearchGrid: true,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
       },
 
-
+      {
+        windowId: "FIL", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "Floor is L̵̨̛̠̦̲͎̠̗̳͑̇̌̈͛̓͛̽͐͆̈́̍͝͝o̶̢̥̺̥͚̗̱͓̎̑̅̄̿͐́̂̌͑̽̕̚͝v̶̢̪͈̦̽́̆́̾̈́̂͑̓̑̚͝ȩ̷̺̺͖̻͕̟̦̣͇͖̊́̔͆̕͝ͅ", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "FIL", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "45vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "folder.png", // Window Icon Image
+        altText: "STD", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: false,
+        ShowInGodotGrid : false,
+        ShowInUnityGrid : false,
+        showInNavbar: true,
+        ShowInResearchGrid: false,
+        ShowInUnrealGrid : true,
+        ShowInWorkGrid : false,
+      },
     ],
   }),
 

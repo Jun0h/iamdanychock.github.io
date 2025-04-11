@@ -1,3 +1,10 @@
+<script setup>
+import moment from "moment";
+
+const deploymentTime = "Apr 11, 2025 21:51"; // Manually set the deployment time
+
+</script>
+
 <template>
 <div class="menu" style="z-index: 1000000">
     <div class="sidebar">
@@ -32,13 +39,18 @@
             </div>
         </a>
         <div class="divider"></div>
-        <a href="/files/CV_Danilo_OSORIO_Revised.pdf" target="_blank">
+        <a href="https://drive.usercontent.google.com/u/0/uc?id=1-T24xYOpSiPmmMKG1miYXl4oRchfPmBo&export=download" target="_blank">
             <div class="bar">
                 <img class="social-image" src="@/assets/win95Icons/resume.png" />
                 <u>R</u>ésumé
             </div>
         </a>
         
+        <!-- New Deployment Time Entry -->
+      <div class="bar">
+        <img class="social-image" src="@/assets/win95Icons/time.png" />
+        Last Update : {{ deploymentTime }}
+      </div>
     </div>
 </div>
 </template>

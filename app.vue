@@ -1,4 +1,5 @@
 <script setup>
+
 import FileWindow from './templates/FileWindow.vue'
 import Window from './templates/Window.vue'
 import Mail from './templates/Mail.vue'
@@ -11,6 +12,8 @@ import Nossaflex from './views/Nossaflex.vue'
 import StrayNight from './views/Projects/StrayNight.vue'
 import SkyhawkSquadron from './views/Projects/SkyhawkSquadron.vue'
 import GodotContainer from './views/GodotContainer.vue'
+import UnrealContainer from './views/UnrealContainer.vue'
+
 import Rewind from './views/Projects/Rewind.vue'
 import Dual from './views/Projects/Dual.vue'
 import Eye from './views/Projects/Eye.vue'
@@ -18,6 +21,8 @@ import UnityContainer from './views/UnityContainer.vue'
 import Rush from './views/Projects/Rush.vue'
 import ResearchContainer from './views/ResearchContainer.vue'
 import ShaderProject from './views/Projects/ShaderProj.vue'
+import STD from './views/Projects/STD.vue'
+import FIL from './views/Projects/FIL.vue'
 
 import { useGtag } from '#imports'
 
@@ -38,7 +43,8 @@ const windowComponents = [
   { name: 'window', comp: Window },
   { name: 'ImagePreviewWindow', comp: ImagePreviewWindow },
   { name: 'mail', comp: Mail },
-  { name: 'FilesWindow', comp: FileWindow }
+  { name: 'FilesWindow', comp: FileWindow },
+
 ]
 
 const slotViews = [
@@ -56,7 +62,13 @@ const slotViews = [
   {name : 'Vampy', comp : Vampy},
   {name : 'Paper', comp : Paper},
   {name : 'ResearchContainer', comp : ResearchContainer},
-  {name : 'ShaderProject', comp :  ShaderProject}
+  {name : 'ShaderProject', comp :  ShaderProject},
+  {name : 'UnrealContainer', comp :  UnrealContainer},
+  {name : 'STD', comp :  STD},
+  {name : 'FIL', comp :  FIL},
+
+
+
 ]
 
 const windowCheck = (windowId) => {
@@ -78,6 +90,12 @@ const openWindow = (windowId) => {
     windowId: windowId
   }
   windowsStore.setWindowState(payload)
+
+  gtag('event', 'open_window', {
+    event_category: 'Window',
+    event_label: windowId,
+    value: windowId
+  })
 }
 
 onMounted(() => {
@@ -94,6 +112,7 @@ onMounted(() => {
   openWindow('BiographyWindow')
   allConsentGranted()
   initialize('G-DQFM4HPQW5')
+
 })
 
 
@@ -106,6 +125,9 @@ function allConsentGranted() {
     ad_storage: 'granted',
     analytics_storage: 'granted'
   })
+
+
+
 }
 </script>
 
