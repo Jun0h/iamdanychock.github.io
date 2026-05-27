@@ -22,6 +22,12 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/iamdanychock.github.io/', // baseURL: '/<repository>/'
     buildAssetsDir: 'assets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
+    head : {
+
+    title: 'Dany Portfolio',
+      link : [
+        { rel: 'icon', type: 'image/png', href: 'apple-touch-icon.png' },]
+    }
   },
   gtag: {
     id: 'G-DQFM4HPQW5', // Remplace par ton ID de suivi GA4

@@ -4,7 +4,7 @@
     <!-- Titre -->
     <h1 style="margin-left: 10px;">BAA-tle For The Forest</h1>
     <h4 class="text-gray-600 font-medium text-xs" style="padding-bottom: 10px; display: flex; gap: 5px;">
-    <img class="w-auto h-5 rounded-none text-xs" alt="Godot" src="https://img.shields.io/badge/Made%20with-Unity-000000.svg?style=flat&logo=unity" />
+    <img class="w-auto h-5 rounded-none text-xs" alt="Unity" src="https://img.shields.io/badge/Made%20with-Unity-000000.svg?style=flat&logo=unity" />
     <img class="w-auto h-5 rounded-none text-xs" alt="C#" src="https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white" />
     <img class="w-auto h-5 rounded-none text-xs" alt="Photoshop" src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?logo=Adobe%20Photoshop&logoColor=black" />
 

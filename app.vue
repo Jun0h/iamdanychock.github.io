@@ -8,6 +8,7 @@ import AppGrid from './templates/AppGrid.vue'
 import Bio from './views/Bio.vue'
 import Resume from './views/Resume.vue'
 import Nossaflex from './views/Nossaflex.vue'
+import News from './views/News.vue'
 
 import StrayNight from './views/Projects/StrayNight.vue'
 import SkyhawkSquadron from './views/Projects/SkyhawkSquadron.vue'
@@ -23,6 +24,16 @@ import ResearchContainer from './views/ResearchContainer.vue'
 import ShaderProject from './views/Projects/ShaderProj.vue'
 import STD from './views/Projects/STD.vue'
 import FIL from './views/Projects/FIL.vue'
+import Vampy from './views/Projects/Vampy.vue'
+import Paper from './views/Projects/Paper.vue'
+import EchoGods from './views/Projects/EchoGods.vue'
+import WorkContainer from './views/WorkContainer.vue'
+import Fleur from './views/Work/Fleur.vue'
+import TheRed from './views/Work/TheRed.vue'
+import VRProject from './views/Projects/VRProject.vue'  
+import TheNameIWear from './views/Projects/TheNameIWear.vue'
+import Paint from './views/Projects/Paint.vue'
+import PopUp from './views/Projects/PopUp.vue'
 
 import { useGtag } from '#imports'
 
@@ -33,8 +44,8 @@ import StartMenu from './templates/StartMenu.vue'
 import {
     useWindowsStore
 } from './stores/windows'
-import Vampy from './views/Projects/Vampy.vue'
-import Paper from './views/Projects/Paper.vue'
+
+
 const windowsStore = useWindowsStore()
 const windows = windowsStore.windows
 const { gtag, initialize } = useGtag()
@@ -66,9 +77,15 @@ const slotViews = [
   {name : 'UnrealContainer', comp :  UnrealContainer},
   {name : 'STD', comp :  STD},
   {name : 'FIL', comp :  FIL},
-
-
-
+  {name : 'News', comp :  News},
+  {name : 'EchoGods', comp :  EchoGods},
+  {name : 'WorkContainer', comp :  WorkContainer},
+  {name : 'Fleur', comp :  Fleur},
+  {name : 'TheRed', comp :  TheRed},
+  {name : 'VRProject', comp :  VRProject},
+  //  {name : 'TheNameIWear', comp :  TheNameIWear},
+   {name : 'Paint', comp :  Paint},
+   {name : 'PopUp', comp :  PopUp},
 ]
 
 const windowCheck = (windowId) => {
@@ -109,11 +126,17 @@ onMounted(() => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
   });
+  openWindow('News')
   openWindow('BiographyWindow')
+  openWindow('PopUp')
+
+
   allConsentGranted()
   initialize('G-DQFM4HPQW5')
 
 })
+
+
 
 
 
@@ -126,6 +149,8 @@ function allConsentGranted() {
     analytics_storage: 'granted'
   })
 
+
+  
 
 
 }

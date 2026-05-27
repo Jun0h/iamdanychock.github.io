@@ -10,6 +10,9 @@ import {
     useWindowsStore
 } from '@/stores/windows'
 
+
+const { gtag } = useGtag()
+
 const props = defineProps({
     windowId: String,
     nameOfWindow: String,
@@ -50,14 +53,16 @@ const w = ref(400)
 const h = ref(400)
 
 const style = computed(() => ({
-    height: `${h.value}px`,
-    width: `${w.value}px`,
+    height: window.value?.autoSize ? "fit-content" : `${h.value}px`,
+    width: window.value?.autoSize ? "fit-content" : `${w.value}px`,
     transform: `translate(${position.value.x}px, ${position.value.y}px)`,
     "--content-padding-left": props.content_padding_left || "15%",
     "--content-padding-right": props.content_padding_right || "15%",
     "--content-padding-top": props.content_padding_top || "5%",
     "--content-padding-bottom": props.content_padding_bottom || "5%",
     "--fullscreen": windowsStore.getFullscreenWindowHeight, // assuming this is a method in your store
+    "--window-min-width": window.value?.minWidth ?? "50vw",
+    "--window-min-height": window.value?.minHeight ?? "80vh",
 }));
 
 const setActiveWindow = () => {
@@ -123,6 +128,20 @@ let isDragging = false;
 
 onMounted(() => {
     window.value = windowsStore.getWindowById(ComponentName)
+    w.value = window.value.width 
+    h.value = window.value.height
+
+    // Ajoute ce bloc pour tracker l'ouverture
+    if (window.value && window.value.windowId) {
+        gtag('event', 'open_window', {
+            event_category: 'Window',
+            event_label: window.value.windowId,
+            value: window.value.windowId
+        });
+
+        console.log(`[gtag] open_window event sent for: ${window.value.windowId}`);
+    }
+
     const draggableWindow = interact("#" + window.value.windowId)
     draggableWindow
         .draggable({
@@ -185,6 +204,7 @@ onMounted(() => {
                 }),
             ],
         })
+
 })
 </script>
 
@@ -192,6 +212,7 @@ onMounted(() => {
 <div :id="window.windowId" :style="style" class="window window-style" :class="{
         'fullscreen': window.fullscreen == true,
         'minimize': window.fullscreen == 'minimize',
+        'window-fit-content': window.autoSize === true,
     }"
     @click="setActiveWindow" 
     @dragstart="setActiveWindow" @click.native="setActiveWindow">
@@ -272,6 +293,10 @@ onMounted(() => {
     padding-left: var(--content-padding-left);
     padding-top: var(--content-padding-top);
     padding-bottom: var(--content-padding-bottom);
+}
+
+.window-fit-content .content {
+    flex-grow: 0;
 }
 
 /*-------------------------------------------*\

@@ -527,6 +527,232 @@ export const useWindowsStore = defineStore("windows", {
         ShowInUnrealGrid : true,
         ShowInWorkGrid : false,
       },
+      {
+        windowId: "News", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "What's New?", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "News", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "3vw", // Window Position X (when first opened)
+        positionY: "15%", // Window Position Y (when first opened)
+        iconImage: "News.png", // Window Icon Image
+        altText: "News", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: true,
+        ShowInGodotGrid : false,
+        ShowInUnityGrid : false,
+        showInNavbar: true,
+        ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
+        width: 420,
+        height: 420,
+      },
+
+{
+        windowId: "EchoGods", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "Echo of Gods", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "EchoGods", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "45vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "folder.png", // Window Icon Image
+        altText: "Echo of Gods", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: false,
+        ShowInGodotGrid : false,
+        ShowInUnityGrid : false,
+        showInNavbar: true,
+        ShowInResearchGrid: false,
+        ShowInUnrealGrid : true,
+        ShowInWorkGrid : false,
+      },
+
+
+      {
+        windowId: "Fleur", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "Fleur", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "Fleur", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "45vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "folder.png", // Window Icon Image
+        altText: "Fleur", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: false,
+        ShowInGodotGrid : false,
+        ShowInUnityGrid : false,
+        showInNavbar: true,
+        ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : true,
+      },
+
+            {
+        windowId: "TheRed", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "TheRed Games", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "TheRed", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "45vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "folder.png", // Window Icon Image
+        altText: "TheRed", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: false,
+        ShowInGodotGrid : false,
+        ShowInUnityGrid : false,
+        showInNavbar: true,
+        ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : true,
+      },
+      
+      {
+        windowId: "VRProject", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "VR Project", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "VRProject", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "45vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "folder.png", // Window Icon Image
+        altText: "VR Project", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: false,
+        ShowInGodotGrid : false,
+        ShowInUnityGrid : false,
+        showInNavbar: true,
+        ShowInResearchGrid: true,
+        ShowInUnrealGrid : true,
+        ShowInWorkGrid : false,
+      },
+
+            {
+        windowId: "TheNameIWear", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "The Name I Wear", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "TheNameIWear", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "45vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "folder.png", // Window Icon Image
+        altText: "The Name I Wear", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: false,
+        ShowInGodotGrid : false,
+        ShowInUnityGrid : false,
+        showInNavbar: true,
+        ShowInResearchGrid: false,
+        ShowInUnrealGrid : true,
+        ShowInWorkGrid : false,
+      },
+
+                  {
+        windowId: "Paint", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "Paint", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "Paint", // Window Content (used under slots)
+        windowContentPadding: {
+                      top: "0",
+                      right: "0",
+                      bottom: "0",
+                      left: "0",
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "45vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "MS_PAINT.png", // Window Icon Image
+        altText: "Paint", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: true,
+        ShowInGodotGrid : false,
+        ShowInUnityGrid : false,
+        showInNavbar: true,
+        ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
+        width: 400,
+        height: 400,
+      },
+
+                        {
+        windowId: "PopUp", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "PLAY IT NOW!!!", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "PopUp", // Window Content (used under slots)
+        windowContentPadding: {
+                      top: "0",
+                      right: "0",
+                      bottom: "0",
+                      left: "0",
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "70vw", // Window Position X (when first opened)
+        positionY: "80%",
+        iconImage: "folder.png", // Window Icon Image
+        altText: "PopUp", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: false,
+        ShowInGodotGrid : false,
+        ShowInUnityGrid : false,
+        showInNavbar: true,
+        ShowInResearchGrid: false,
+        ShowInUnrealGrid : false,
+        ShowInWorkGrid : false,
+        width: 646,
+        height: 190,
+        autoSize: true,
+        minWidth: "0px",
+        minHeight: "0px",
+      },
+          
     ],
   }),
 

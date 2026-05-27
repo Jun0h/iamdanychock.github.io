@@ -10,8 +10,8 @@
   border-bottom: solid rgb(90, 90, 90) 1.5px;
   box-shadow: 1.5px 1.5px black;
   outline: rgb(222, 222, 222) 1px solid;
-  min-height: 80vh;
-  min-width: 50vw;
+  min-height: var(--window-min-height, 80vh);
+  min-width: var(--window-min-width, 50vw);
   max-width: 100vw !important;
   max-height: 100vh !important;
 }
@@ -22,8 +22,8 @@
 
 @media only screen and (max-width: 600px) {
   .window-style {
-    min-height: 70vh;
-    min-width: 100vw;
+    min-height: var(--window-min-height, 70vh);
+    min-width: var(--window-min-width, 100vw);
   }
 }
 

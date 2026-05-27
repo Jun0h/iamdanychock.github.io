@@ -60,17 +60,17 @@ onMounted(() => {
               </p>
             </div>
           </button>
-        </li>
+        </li> 
       </nav>
 
     </template>
 
     
  
-    <style>
+    <style scoped>
 
 .grid-container1 {
-  display: grid;
+  display: inline;
   grid-template-columns: repeat(4, 1fr); 
   padding: 10px;
 }
@@ -89,8 +89,12 @@ onMounted(() => {
 
 .image-center {
     display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center; /* Centre l'image verticalement (si nécessaire) */
+    justify-content: center; 
+    align-items: center; 
+}
+
+.icon-text {
+  color: #000000 ;
 }
 
 

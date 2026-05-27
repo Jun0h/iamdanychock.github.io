@@ -68,7 +68,7 @@ onMounted(() => {
 
     
  
-    <style>
+    <style scoped>
 
 .grid-container1 {
   display: grid;
@@ -80,6 +80,10 @@ onMounted(() => {
   background-color: #ccc;
   padding: 20px;
   text-align: center;
+}
+
+.icon-text {
+  color: #000000 ;
 }
 
 .icon-image1 {
