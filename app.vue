@@ -83,9 +83,9 @@ const slotViews = [
   {name : 'Fleur', comp :  Fleur},
   {name : 'TheRed', comp :  TheRed},
   {name : 'VRProject', comp :  VRProject},
-  //  {name : 'TheNameIWear', comp :  TheNameIWear},
-   {name : 'Paint', comp :  Paint},
-   {name : 'PopUp', comp :  PopUp},
+  {name : 'TheNameIWear', comp :  TheNameIWear},
+  {name : 'Paint', comp :  Paint},
+  {name : 'PopUp', comp :  PopUp},
 ]
 
 const windowCheck = (windowId) => {

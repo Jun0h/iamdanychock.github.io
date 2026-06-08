@@ -1,7 +1,7 @@
 <script setup>
 import moment from "moment";
 
-const deploymentTime = "September 11, 2025 13:00"; // Manually set the deployment time
+const deploymentTime = "May 29, 2026"; // Manually set the deployment time
 
 </script>
 

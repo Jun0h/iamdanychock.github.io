@@ -12,6 +12,9 @@ const history = ref<ImageHistory<typeof tools>>([])
 // Use the utility function createSettings to set it up, where you pass the tools you're using along with any start settings.
 const settings = createSettings(tools)
 
+const NORMAL_BRUSH_SIZE = 2
+const ERASER_BRUSH_SIZE = 10
+
 // Paint 95 color palette
 const colors = [
   '#000000', '#FFFFFF', '#FF0000', '#00FF00',
@@ -23,6 +26,12 @@ const colors = [
 const changeColor = (color: string) => {
   // vue-paint uses 'color' property for stroke color
   settings.value.color = color
+  ;(settings.value as any).thickness = NORMAL_BRUSH_SIZE
+}
+
+const useEraser = () => {
+  settings.value.color = '#FFFFFF'
+  ;(settings.value as any).thickness = ERASER_BRUSH_SIZE
 }
 </script>
 
@@ -40,7 +49,7 @@ const changeColor = (color: string) => {
           :title="color"
         />
       </div>
-      <button class="eraser-button" @click="changeColor('#FFFFFF')" title="Eraser">
+      <button class="eraser-button" @click="useEraser" title="Eraser">
         🧹
       </button>
     </div>

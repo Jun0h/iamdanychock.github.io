@@ -719,6 +719,9 @@ export const useWindowsStore = defineStore("windows", {
         ShowInWorkGrid : false,
         width: 400,
         height: 400,
+        autoSize: true,
+        minWidth: "0px",
+        minHeight: "0px",
       },
 
                         {

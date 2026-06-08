@@ -1,10 +1,12 @@
 <script setup>
-import { onMounted } from 'vue';
+import { computed } from 'vue';
 import {useWindowsStore} from '~/stores/windows'
 
 const windowsStore = useWindowsStore()
 
-const gridHeight = ref("")
+const workWindows = computed(() =>
+  windowsStore.windows.filter((window) => window.ShowInWorkGrid !== false)
+)
 
 const openWindow = (windowId) => {
     const payload = {
@@ -29,11 +31,6 @@ const getImagePath = (iconImage) => {
     return mod.default;
 };
 
-onMounted(() => {
-    let gridH = windowsStore.getFullscreenWindowHeight
-    gridHeight.value = 10 + "px"
-})
-
 </script>
 
 
@@ -46,11 +43,10 @@ onMounted(() => {
 
     <h3>Here you may find all my professional projects</h3>
     <p>Click on the icons to open the projects!</p>
-      <nav class="grid-container1" :style="{ height: gridHeight }">
-        <li v-for="window in windowsStore.windows" :key="window.key">
+      <nav class="grid-container1">
+        <li class="grid-item1" v-for="window in workWindows" :key="window.key">
           <button
             class="icon"
-            v-if="window.ShowInWorkGrid != false"
             @touchstart="openWindow(window.windowId)"
             @dblclick="openWindow(window.windowId)"
           >
@@ -76,20 +72,29 @@ onMounted(() => {
 
 .grid-container1 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px 14px;
   padding: 10px;
 }
 
-.grid-item {
-  background-color: #ccc;
-  padding: 20px;
-  text-align: center;
+.grid-item1 {
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .icon-image1 {
   width: 50px;
   height: 50px;
   margin-bottom: 5px;
+}
+
+.icon {
+  width: 100%;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-center {
